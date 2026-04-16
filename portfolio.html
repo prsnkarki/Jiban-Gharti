@@ -1,0 +1,389 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logos/logo.png" alt="Logo" class="logo-img">
+      <span class="logo-text">Jiban Gharti</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#" class="active">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Start a Project</a>
+    <button class="nav-burger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav-mobile" id="mobMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="#contact">Contact</a>
+  <a href="#contact" class="m-cta">Start a Project</a>
+</div>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__bg"></div>
+  <div class="hero__grid"></div>
+  <div class="hero-box">
+    <div class="brk brk-tl"></div>
+    <div class="brk brk-tr"></div>
+    <div class="brk brk-bl"></div>
+    <div class="brk brk-br"></div>
+    <p class="ph-badge"><span class="ph-badge__dot"></span>Multi-Disciplinary Designer &mdash; Chuchepati, Kathmandu</p>
+    <h1 class="ph-title">Jiban<br><em>Gharti</em></h1>
+    <p class="ph-sub">Crafting <strong>brand identities, UI/UX systems, and web experiences</strong> that attract, inspire, and endure &mdash; built with intent and a relentless eye for detail.</p>
+    <div class="ph-ctas">
+      <a href="#work" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-secondary">Start a Project &rarr;</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- QUOTE -->
+<div class="quote-strip">
+  <blockquote>&ldquo;Design is not just what it looks like and feels like. Design is how it works.&rdquo;</blockquote>
+  <cite>&mdash; Steve Jobs</cite>
+</div>
+
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker__label">Worked With</div>
+  <div class="ticker__strip">
+    <div class="ticker__track">
+      <span class="t-name">YangBnCubs</span><span class="t-dot"></span>
+      <span class="t-name">CreatifStudio</span><span class="t-dot"></span>
+      <span class="t-name">BoldType</span><span class="t-dot"></span>
+      <span class="t-name">HUNK</span><span class="t-dot"></span>
+      <span class="t-name">SilverLine</span><span class="t-dot"></span>
+      <span class="t-name">PixelCraft</span><span class="t-dot"></span>
+      <span class="t-name">NovaBrand</span><span class="t-dot"></span>
+      <span class="t-name">UrbanForm</span><span class="t-dot"></span>
+      <span class="t-name">StudioSix</span><span class="t-dot"></span>
+      <span class="t-name">VistaCo</span><span class="t-dot"></span>
+      <span class="t-name">YangBnCubs</span><span class="t-dot"></span>
+      <span class="t-name">CreatifStudio</span><span class="t-dot"></span>
+      <span class="t-name">BoldType</span><span class="t-dot"></span>
+      <span class="t-name">HUNK</span><span class="t-dot"></span>
+      <span class="t-name">SilverLine</span><span class="t-dot"></span>
+      <span class="t-name">PixelCraft</span><span class="t-dot"></span>
+      <span class="t-name">NovaBrand</span><span class="t-dot"></span>
+      <span class="t-name">UrbanForm</span><span class="t-dot"></span>
+      <span class="t-name">StudioSix</span><span class="t-dot"></span>
+      <span class="t-name">VistaCo</span><span class="t-dot"></span>
+    </div>
+  </div>
+</div>
+
+
+<!-- SELECTED WORK &mdash; 3-CARD CAROUSEL -->
+<section id="work" class="feat-proj">
+  <div class="feat-proj-max">
+    <div class="feat-header">
+      <p class="s-label">Selected Work</p>
+      <h2 class="s-title">All My <em>Designs</em></h2>
+      <div class="sw-filters">
+        <button class="sw-filter-btn active" data-filter="all">All Work</button>
+        <button class="sw-filter-btn" data-filter="LOGO">LOGO</button>
+        <button class="sw-filter-btn" data-filter="MOCKUP">MOCKUP</button>
+        <button class="sw-filter-btn" data-filter="THUMBNAIL">THUMBNAIL</button>
+        <button class="sw-filter-btn" data-filter="BRANDING">BRANDING</button>
+        <button class="sw-filter-btn" data-filter="POSTER">POSTER</button>
+      </div>
+    </div>
+
+    <div class="sw-carousel-wrap">
+      <!-- Left arrow -->
+      <button class="sw-arrow sw-arrow-left" id="swPrev" aria-label="Previous">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+
+      <!-- 3 visible cards -->
+      <div class="sw-carousel-stage" id="swStage">
+        <!-- cards injected by JS -->
+      </div>
+
+      <!-- Right arrow -->
+      <button class="sw-arrow sw-arrow-right" id="swNext" aria-label="Next">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+
+    <div class="sw-footer">
+      <button class="sw-cta-btn" id="swViewBtn">Projects</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- SOCIAL PROFILES -->
+<section class="socials">
+  <div class="socials-max">
+    <div class="socials-grid">
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/zjban_?igsh=aGQ1bXYwdW5xeWZl&utm_source=qr" class="sp" target="_blank" rel="noopener">
+        <div class="sp-top">
+          <div class="sp-ico">
+            <img src="assets/icons/instagram.png" alt="Instagram" style="width: 24px; height: 24px; object-fit: contain;">
+          </div>
+          <span class="sp-platform">Instagram</span>
+        </div>
+        <h3 class="sp-title">Brand Work,<br>Posters &amp; More</h3>
+        <p class="sp-desc">Day-to-day design work &mdash; logos, social graphics, posters, and behind-the-scenes process posts.</p>
+        <div class="sp-foot">
+          <span class="sp-handle">@jibangharti.design</span>
+          <span class="sp-cta">View Profile &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Behance -->
+      <a href="https://www.behance.net/grandsketchdesigner" class="sp sp--behance" target="_blank" rel="noopener">
+        <div class="sp-top">
+          <div class="sp-ico sp-ico--behance">
+            <img src="assets/icons/behance.png" alt="Behance" style="width: 24px; height: 24px; object-fit: contain;">
+          </div>
+          <span class="sp-platform sp--behance-label">Behance</span>
+        </div>
+        <h3 class="sp-title">Full Case<br>Studies &amp; Work</h3>
+        <p class="sp-desc">Complete project boards &mdash; brand identities, UI designs, and in-depth case studies of my best work.</p>
+        <div class="sp-foot">
+          <span class="sp-handle">behance.net/grandsketchdesigner</span>
+          <span class="sp-cta sp--behance-cta">View Portfolio &rarr;</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- PROCESS &mdash; HOW I WORK -->
+<section id="process" class="process">
+  <div class="process-max">
+    <div class="proc-head">
+      <p class="s-label">How I Work</p>
+
+      <p class="proc-intro">A clear creative process from brief to delivery &mdash; intentional at every step.</p>
+    </div>
+
+    <div class="proc-timeline">
+
+      <div class="proc-step">
+        <span class="proc-step-bg-num">01</span>
+        <div class="proc-step-node">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+        </div>
+        <div class="proc-step-body">
+          <span class="proc-step-num">01</span>
+          <p class="proc-step-phase">Discover</p>
+          <h3 class="proc-step-title">Research &amp; Brief</h3>
+          <p class="proc-step-desc">Deep dive into your brand, audience, and goals. Every project starts with understanding &mdash; before a single pixel is placed.</p>
+          <div class="proc-step-tags">
+            <span>Creative Brief</span><span>Audience Map</span><span>Goals</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proc-step">
+        <span class="proc-step-bg-num">02</span>
+        <div class="proc-step-node">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/>
+          </svg>
+        </div>
+        <div class="proc-step-body">
+          <span class="proc-step-num">02</span>
+          <p class="proc-step-phase">Define</p>
+          <h3 class="proc-step-title">Strategy &amp; Direction</h3>
+          <p class="proc-step-desc">Translate insight into a clear creative direction. Moodboards, references, and a defined visual language before design begins.</p>
+          <div class="proc-step-tags">
+            <span>Moodboard</span><span>Style Tiles</span><span>Direction Deck</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proc-step">
+        <span class="proc-step-bg-num">03</span>
+        <div class="proc-step-node">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+          </svg>
+        </div>
+        <div class="proc-step-body">
+          <span class="proc-step-num">03</span>
+          <p class="proc-step-phase">Design</p>
+          <h3 class="proc-step-title">Creation &amp; Craft</h3>
+          <p class="proc-step-desc">Precise, intentional execution across every touchpoint. Iterative rounds with your feedback built in at every stage.</p>
+          <div class="proc-step-tags">
+            <span>Design Files</span><span>Prototypes</span><span>Revisions</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proc-step">
+        <span class="proc-step-bg-num">04</span>
+        <div class="proc-step-node">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </div>
+        <div class="proc-step-body">
+          <span class="proc-step-num">04</span>
+          <p class="proc-step-phase">Deliver</p>
+          <h3 class="proc-step-title">Handoff &amp; Beyond</h3>
+          <p class="proc-step-desc">Clean final files, brand guidelines, and continued support. Your project ends &mdash; the relationship doesn&rsquo;t have to.</p>
+          <div class="proc-step-tags">
+            <span>Final Files</span><span>Brand Guide</span><span>Support</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Stats strip -->
+    <div class="proc-cta-strip">
+      <div class="proc-stat">
+        <span class="proc-stat-num">50<em>+</em></span>
+        <span class="proc-stat-label">Projects Delivered</span>
+      </div>
+      <div class="proc-stat">
+        <span class="proc-stat-num">3<em>&ndash;5</em></span>
+        <span class="proc-stat-label">Day Avg. Turnaround</span>
+      </div>
+      <div class="proc-stat">
+        <span class="proc-stat-num">100<em>%</em></span>
+        <span class="proc-stat-label">Client Satisfaction</span>
+      </div>
+      <div class="proc-stat">
+        <span class="proc-stat-num">4</span>
+        <span class="proc-stat-label">Years Experience</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- CTA -->
+<section id="contact" class="cta-band">
+  <div class="cta-band__inner">
+    <p class="cta-avail"><span class="cta-dot"></span>Currently Available for New Projects</p>
+    <p class="cta-eyebrow">Ready to Build?</p>
+    <h2 class="cta-title">Let&rsquo;s Create<br><em>Something Great</em></h2>
+    <p class="cta-sub">Have an idea that deserves great design? Let&rsquo;s talk &mdash; I&rsquo;m open to brand identity, UI/UX, web, and motion projects.</p>
+    <div class="cta-btns">
+      <a href="/cdn-cgi/l/email-protection#cca4a9a0a0a38ca6a5baada2a1adabadbee2afa3a1" class="btn-primary btn-large">Get In Touch &rarr;</a>
+      <a href="#" class="btn-secondary btn-large" id="backToTop">&larr; Back to Top</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-max">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <div class="footer-logo-wrapper">
+          <img class="footer-logo" src="assets/logos/logo.png" alt="Jiban Gharti logo"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+          <span>Jiban Gharti</span>
+        </div>
+        <p class="f-tag">Multi-disciplinary designer crafting brand identities, web experiences, and motion that endure.</p>
+        <div class="f-socials">
+          <a href="https://www.facebook.com/share/1DKPAcsQst/?mibextid=wwXIfr" title="Facebook" aria-label="Facebook">
+            <img src="assets/icons/facebook.png" alt="Facebook" style="width: 20px; height: 20px; object-fit: contain;">
+          </a>
+          <a href="https://www.instagram.com/zjban_?igsh=aGQ1bXYwdW5xeWZl&utm_source=qr" title="Instagram" aria-label="Instagram">
+            <img src="assets/icons/instagram.png" alt="Instagram" style="width: 20px; height: 20px; object-fit: contain;">
+          </a>
+          <a href="https://pin.it/7tyFkDetD" title="Pinterest" aria-label="Pinterest">
+            <img src="assets/icons/pinterest.png" alt="Pinterest" style="width: 20px; height: 20px; object-fit: contain;">
+          </a>
+          <a href="https://www.behance.net/grandsketchdesigner" title="Behance" aria-label="Behance">
+            <img src="assets/icons/behance.png" alt="Behance" style="width: 20px; height: 20px; object-fit: contain;">
+          </a>
+        </div>
+      </div>
+
+      <div class="f-col">
+        <p class="f-col-title">Navigate</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="f-col">
+        <p class="f-col-title">Services</p>
+        <ul>
+          <li><a href="#">Brand Identity</a></li>
+          <li><a href="#">UI/UX Design</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Motion Graphics</a></li>
+          <li><a href="#">Print Design</a></li>
+          <li><a href="#">Social Media</a></li>
+        </ul>
+      </div>
+
+      <div class="f-col">
+        <p class="f-col-title">Contact</p>
+        <ul>
+          <li><a href="mailto:jibanbpg@gmail.com">jibanbpg@gmail.com</a></li>
+          <li><a href="tel:+9779763904480">+977-9763904480</a></li>
+          <li><a href="tel:+9779858029435">+977-9858029435</a></li>
+          <li><a href="#">Chuchepati, Kathmandu, 44602, Nepal</a></li>
+          <li><a href="#contact">Available for Work</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Jiban Gharti. All rights reserved.</p>
+      <div class="footer-right">
+        <p class="footer-credit">Designed &amp; Built by <a href="https://mukeshkarki.com.np">PRSN</a></p>
+        <button class="footer-back-top" type="button" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="assets/js/portfolio.js"></script>
+</body>
+</html>
+
+
+

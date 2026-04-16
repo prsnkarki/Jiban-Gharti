@@ -1,0 +1,24 @@
+/* Services page styles */
+
+.services-hero {
+  padding: 6rem 0 4rem;
+  text-align: center;
+}
+
+.services-hero__inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.services-hero .section-label {
+  margin-bottom: 1rem;
+}
+
+.services-hero .section-title {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+}
+
+.services-hero .section-description {
+  margin-top: 1rem;
+  color: #7a7a7a;
+}
